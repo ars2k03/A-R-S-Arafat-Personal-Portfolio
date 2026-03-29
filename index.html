@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A R S | Flutter Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader__content">
+      <div class="loader__logo">A R S</div>
+      <div class="loader__circle">
+        <svg class="loader__svg" width="180" height="180" viewBox="0 0 180 180">
+          <circle class="loader__bg" cx="90" cy="90" r="74"></circle>
+          <circle class="loader__progress" id="loader-progress" cx="90" cy="90" r="74"></circle>
+        </svg>
+        <div class="loader__number" id="loader-percent">0%</div>
+      </div>
+      <div class="loader__text">Loading portfolio...</div>
+    </div>
+  </div>
+
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#home" class="nav__logo"><h1>A R S</h1></a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class='bx bx-moon'></i>
+        </button>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-menu'></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <span class="home__greeting"><h2>Hi, I'm</h2></span>
+        <h1 class="home__title">
+          <span class="home__title-color">A R S Arafat</span><br />
+          Flutter Developer
+        </h1>
+        <p class="home__description">
+          I build clean, user-friendly, and scalable mobile applications with Flutter,
+          and I'm growing toward becoming a Full-Stack App Developer.
+        </p>
+        <div class="home__buttons">
+          <a href="#contact" class="button">Contact Me</a>
+          <a href="#skills" class="button button--ghost">My Skills</a>
+        </div>
+      </div>
+      <div class="home__img">
+        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <mask id="mask0" mask-type="alpha">
+            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+          </mask>
+          <g mask="url(#mask0)">
+            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="assets/img/about.png" alt="A R S Arafat" />
+        </div>
+        <div>
+          <h2 class="about__subtitle">I'm A R S Arafat</h2>
+          <p class="about__text">
+            I'm a CSE student and a passionate Flutter developer who enjoys building clean,
+            user-friendly, and scalable applications. I work with Flutter & Dart, build
+            real-world projects, integrate REST APIs, and continuously improve my understanding
+            of architecture and development best practices.
+          </p>
+          <p class="about__text">
+            I'm currently learning backend development with JavaScript and Node.js to become a
+            Full-Stack Developer. I love building, breaking, learning, and turning ideas into
+            real-world apps.
+          </p>
+          <div class="about__info">
+            <div class="about__info-box">
+              <span class="about__info-title">Working On</span>
+              <span class="about__info-name">Flutter App Development</span>
+            </div>
+            <div class="about__info-box">
+              <span class="about__info-title">Learning</span>
+              <span class="about__info-name">Backend Development</span>
+            </div>
+            <div class="about__info-box">
+              <span class="about__info-title">Focus</span>
+              <span class="about__info-name">Full-Stack Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Professional Skills</h2>
+          <p class="skills__text">
+            My stack focuses on mobile app development with Flutter, frontend fundamentals,
+            backend learning, tools, productivity, and practical problem solving.
+          </p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-flutter skills__icon'></i>
+              <span class="skills__name">Flutter</span>
+            </div>
+            <div class="skills__bar skills__flutter"></div>
+            <div><span class="skills__percentage">90%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-code-alt skills__icon'></i>
+              <span class="skills__name">Dart</span>
+            </div>
+            <div class="skills__bar skills__dart"></div>
+            <div><span class="skills__percentage">88%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-javascript skills__icon'></i>
+              <span class="skills__name">JavaScript</span>
+            </div>
+            <div class="skills__bar skills__javascript"></div>
+            <div><span class="skills__percentage">75%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-nodejs skills__icon'></i>
+              <span class="skills__name">Node.js</span>
+            </div>
+            <div class="skills__bar skills__node"></div>
+            <div><span class="skills__percentage">65%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-html5 skills__icon'></i>
+              <span class="skills__name">HTML5 / CSS3</span>
+            </div>
+            <div class="skills__bar skills__web"></div>
+            <div><span class="skills__percentage">80%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-palette skills__icon'></i>
+              <span class="skills__name">Canva</span>
+            </div>
+            <div class="skills__bar skills__canva"></div>
+            <div><span class="skills__percentage">85%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-video skills__icon'></i>
+              <span class="skills__name">Filmora</span>
+            </div>
+            <div class="skills__bar skills__filmora"></div>
+            <div><span class="skills__percentage">80%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-file skills__icon'></i>
+              <span class="skills__name">MS Word</span>
+            </div>
+            <div class="skills__bar skills__word"></div>
+            <div><span class="skills__percentage">85%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-slideshow skills__icon'></i>
+              <span class="skills__name">PowerPoint</span>
+            </div>
+            <div class="skills__bar skills__powerpoint"></div>
+            <div><span class="skills__percentage">82%</span></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-joystick skills__icon'></i>
+              <span class="skills__name">Gaming</span>
+            </div>
+            <div class="skills__bar skills__gaming"></div>
+            <div><span class="skills__percentage">90%</span></div>
+          </div>
+        </div>
+
+        <div class="skills__cards">
+          <div class="skills__group">
+            <h3 class="skills__group-title">Programming Languages</h3>
+            <div class="skills__icon-grid">
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"><span>Dart</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"><span>Kotlin</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__group-title">App Development</h3>
+            <div class="skills__icon-grid">
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"><span>Flutter</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"><span>Dart</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio"><span>Android Studio</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"><span>Kotlin</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" alt="Jetpack Compose"><span>Jetpack Compose</span></div>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__group-title">Web Development</h3>
+            <div class="skills__icon-grid">
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__group-title">Design & Editing</h3>
+            <div class="skills__icon-grid">
+              <div class="skills__icon-card"><img src="https://img.icons8.com/fluency/96/000000/canva.png" alt="Canva"><span>Canva</span></div>
+              <div class="skills__icon-card"><img src="https://img.icons8.com/fluency/96/000000/video-editing.png" alt="Filmora"><span>Filmora</span></div>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__group-title">Tools & Platforms</h3>
+            <div class="skills__icon-grid">
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+              <div class="skills__icon-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
+              <div class="skills__icon-card"><img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="AI-Assisted Development"><span>AI-Assisted Dev</span></div>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__group-title">Office & Productivity</h3>
+            <div class="skills__icon-grid">
+              <div class="skills__icon-card"><img src="https://img.icons8.com/fluency/96/000000/microsoft-word-2019.png" alt="MS Word"><span>MS Word</span></div>
+              <div class="skills__icon-card"><img src="https://img.icons8.com/fluency/96/000000/microsoft-powerpoint-2019.png" alt="PowerPoint"><span>PowerPoint</span></div>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__group-title">Extra Skills</h3>
+            <div class="skills__icon-grid">
+              <div class="skills__icon-card"><img src="https://img.icons8.com/fluency/96/000000/controller.png" alt="Gaming"><span>Gaming</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REDESIGNED PROJECTS SECTION ===== -->
+    <section class="work section" id="work">
+      <h2 class="section-title">Projects</h2>
+      <p class="work__subtitle">A selection of things I've built</p>
+
+      <div class="projects__grid bd-grid">
+
+        <!-- Project 1 — Featured -->
+        <article class="project__card project__card--featured">
+          <div class="project__card-inner">
+            <div class="project__visual">
+              <div class="project__img-wrap">
+                <img src="assets/img/2.jpeg" alt="ARS AI" />
+                <div class="project__overlay">
+                  <a href="https://github.com/ars2k03/A-R-S-AI" target="_blank" class="project__overlay-btn">
+                    <i class='bx bxl-github'></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project__number">01</div>
+            </div>
+            <div class="project__info">
+              <div class="project__meta">
+                <span class="project__tag">AI Chatbot App</span>
+                <span class="project__featured-badge">⭐ Featured</span>
+              </div>
+              <h3 class="project__name">ARS AI</h3>
+              <p class="project__desc">
+                A powerful AI-powered chatbot application built with Flutter, featuring AI chat,
+                image understanding, Firebase sync, theme modes, chat history, markdown rendering,
+                and multi-language support.
+              </p>
+              <div class="project__stack">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Firebase</span>
+                <span>Gemini API</span>
+              </div>
+              <a href="https://github.com/ars2k03/A-R-S-AI" target="_blank" class="project__cta">
+                <i class='bx bxl-github'></i>
+                <span>View Source Code</span>
+                <i class='bx bx-right-arrow-alt project__cta-arrow'></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project__card">
+          <div class="project__card-inner">
+            <div class="project__visual">
+              <div class="project__img-wrap">
+                <img src="assets/img/onboarding.jpeg" alt="WhatsApp Clone" />
+                <div class="project__overlay">
+                  <a href="https://github.com/ars2k03/WhatsApp" target="_blank" class="project__overlay-btn">
+                    <i class='bx bxl-github'></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project__number">02</div>
+            </div>
+            <div class="project__info">
+              <div class="project__meta">
+                <span class="project__tag">Clone App</span>
+              </div>
+              <h3 class="project__name">WhatsApp Clone</h3>
+              <p class="project__desc">
+                A feature-rich WhatsApp UI clone built with Flutter, featuring local real-time chat,
+                Hive persistence, QR scanner, and dark mode support.
+              </p>
+              <div class="project__stack">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Hive</span>
+                <span>QR Scanner</span>
+              </div>
+              <a href="https://github.com/ars2k03/WhatsApp" target="_blank" class="project__cta">
+                <i class='bx bxl-github'></i>
+                <span>View Source Code</span>
+                <i class='bx bx-right-arrow-alt project__cta-arrow'></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project__card">
+          <div class="project__card-inner">
+            <div class="project__visual">
+              <div class="project__img-wrap">
+                <img src="assets/img/1.jpeg" alt="YouTube Clone" />
+                <div class="project__overlay">
+                  <a href="https://github.com/ars2k03/YouTube" target="_blank" class="project__overlay-btn">
+                    <i class='bx bxl-github'></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project__number">03</div>
+            </div>
+            <div class="project__info">
+              <div class="project__meta">
+                <span class="project__tag">Search App</span>
+              </div>
+              <h3 class="project__name">YouTube Clone</h3>
+              <p class="project__desc">
+                A sleek Flutter YouTube search app with Lottie splash screen,
+                dark theme UI, and in-app WebView browsing.
+              </p>
+              <div class="project__stack">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Lottie</span>
+                <span>WebView</span>
+              </div>
+              <a href="https://github.com/ars2k03/YouTube" target="_blank" class="project__cta">
+                <i class='bx bxl-github'></i>
+                <span>View Source Code</span>
+                <i class='bx bx-right-arrow-alt project__cta-arrow'></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- GitHub CTA -->
+      <div class="work__github-cta">
+        <p>Want to see more of my work?</p>
+        <a href="https://github.com/ars2k03" target="_blank" class="button">
+          <i class='bx bxl-github'></i> Visit My GitHub
+        </a>
+      </div>
+    </section>
+    <!-- ===== END PROJECTS ===== -->
+
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__container bd-grid">
+        <div class="contact__info">
+          <h3 class="contact__subtitle">Let's Connect</h3>
+          <p class="contact__text">Open for collaboration, projects, and learning opportunities.</p>
+          <div class="contact__card">
+            <i class='bx bx-envelope contact__card-icon'></i>
+            <div>
+              <span class="contact__card-title">Email</span>
+              <a href="mailto:arafatsohan2003@gmail.com" class="contact__card-data">arafatsohan2003@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact__card">
+            <i class='bx bxl-whatsapp contact__card-icon'></i>
+            <div>
+              <span class="contact__card-title">WhatsApp</span>
+              <a href="https://wa.me/8801771259478" target="_blank" class="contact__card-data">+8801771259478</a>
+            </div>
+          </div>
+          <div class="contact__card">
+            <i class='bx bxl-linkedin-square contact__card-icon'></i>
+            <div>
+              <span class="contact__card-title">LinkedIn</span>
+              <a href="https://linkedin.com/in/ars2k03" target="_blank" class="contact__card-data">linkedin.com/in/ars2k03</a>
+            </div>
+          </div>
+          <div class="contact__card">
+            <span class="contact__card-icon contact__card-icon--x">X</span>
+            <div>
+              <span class="contact__card-title">X</span>
+              <a href="https://x.com/ars_2k03" target="_blank" class="contact__card-data">x.com/ars_2k03</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form">
+          <input type="text" placeholder="Your Name" class="contact__input" />
+          <input type="email" placeholder="Your Email" class="contact__input" />
+          <input type="text" placeholder="Subject" class="contact__input" />
+          <textarea rows="8" placeholder="Write your message..." class="contact__input"></textarea>
+          <button type="submit" class="contact__button button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__title">A R S Arafat</p>
+    <p class="footer__subtitle">Flutter Developer | Future Full-Stack Developer</p>
+    <div class="footer__social">
+      <a href="https://linkedin.com/in/ars2k03" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/ars2k03" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+      <a href="https://x.com/ars_2k03" target="_blank" class="footer__icon footer__icon--x">X</a>
+      <a href="https://wa.me/8801771259478" target="_blank" class="footer__icon"><i class='bx bxl-whatsapp'></i></a>
+      <a href="mailto:arafatsohan2003@gmail.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
+    </div>
+    <p class="footer__copy">Built with passion, learning, and consistency.</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+</html>
