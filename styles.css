@@ -167,10 +167,54 @@ img { max-width: 100%; height: auto; display: block; }
 
 @media screen and (max-width: 767px) {
   .nav__menu {
-    position: fixed; top: var(--header-height); right: -100%;
-    width: 80%; height: 100%; padding: 2rem;
-    background-color: var(--container-color);
-    transition: 0.4s; box-shadow: -4px 0 20px var(--shadow-color);
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: calc(100vh - var(--header-height));
+    padding: 1.25rem;
+    background: var(--container-color);
+    box-shadow: -4px 0 20px var(--shadow-color);
+    transition: 0.4s;
+    z-index: 9999;
+    overflow-y: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    padding: 0.95rem 1rem;
+    background: var(--menu-item-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    color: var(--title-color);
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+
+  .nav__link:hover {
+    background: var(--menu-item-hover-bg);
+    color: var(--first-color);
+  }
+
+  .nav__link.active-link {
+    background: var(--menu-item-active-bg);
+    color: var(--first-color);
+    border-color: var(--first-color);
+  }
+
+  .nav__link:hover::after,
+  .active-link::after {
+    display: none;
   }
 }
 
